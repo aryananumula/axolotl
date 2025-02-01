@@ -59,4 +59,5 @@ async def ping(ctx):
     await ctx.send(f"Pong! {round(bot.latency * 1000)}ms")
 
 
-bot.start(os.environ.get("AXOLOTL_TOKEN"))
+def startBot():
+    bot.start(os.environ.get("AXOLOTL_TOKEN"))
